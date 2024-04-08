@@ -119,42 +119,13 @@ body {
 }
 
 /* Media query for tablets */
-@media screen and (min-width: 768px) and (max-width: 769px) {
-    #header {
-        max-width: 100vw; /* Adjust max width for tablets */
-        min-width: 325px;
-        height: 15vw; /* Adjust height for tablets */
-        min-height: 40px;
-    }
-
-    .beerLogo, .schoolLogo {
-        width: 17vw; /* Adjust logo size for tablets */
-        height: 15vw; /* Maintain aspect ratio */
-    }
-
-    .title {
-        font-size: 8vw; /* Adjust title font size for tablets */
-        margin-top: 2vw;
-    }
-
-    .navbar-buttons {
-        padding-top: 0.5vw;
-        margin-top: 10vw;
-    }
-
-    .navbar-buttons button {
-        padding: 1.0vw 1.6vw; /* Adjust button padding for tablets */
-        font-size: 2.3vw; /* Adjust button font size for tablets */
-    }
-}
-
 /* Media query for smaller screens */
-@media screen and (min-width: 420px) and (max-width: 426px) {
+@media screen and (max-width: 767px) {
     #header {
-        max-width: 80vw; /* Adjust max width for smaller screens */
-        min-width: 425px;
-        height: 18vw;
-        min-height: 40px;
+        max-width: 90vw; /* Adjust max width for smaller screens */
+        min-width: 320px; /* Set a minimum width for smaller screens */
+        height: 18vw; /* Adjust height for smaller screens */
+        min-height: 40px; /* Set a minimum height for smaller screens */
     }
     .beerLogo, .schoolLogo {
         width: 20vw; /* Adjust logo size for smaller screens */
@@ -163,67 +134,12 @@ body {
 
     .title {
         font-size: 10vw; /* Adjust title font size for smaller screens */
-        margin-top: 6vw;
+        margin-top: 4vw; /* Adjust margin top for smaller screens */
     }
 
     .navbar-buttons {
-        padding-top: 0.5vw;
-        margin-top: 12vw;
-    }
-
-    .navbar-buttons button {
-        padding: 1.5vw 3.0vw; /* Adjust button padding for smaller screens */
-        font-size: 2.5vw; /* Adjust button font size for smaller screens */
-    }
-}
-
-@media screen and (min-width: 375px) and (max-width: 376px) {
-    #header {
-        max-width: 80vw; /* Adjust max width for smaller screens */
-        min-width: 375px;
-        height: 18vw;
-        min-height: 40px;
-    }
-    .beerLogo, .schoolLogo {
-        width: 20vw; /* Adjust logo size for smaller screens */
-        height: 18vw; /* Maintain aspect ratio */
-    }
-
-    .title {
-        font-size: 10vw; /* Adjust title font size for smaller screens */
-        margin-top: 7vw;
-    }
-
-    .navbar-buttons {
-        padding-top: 0.5vw;
-        margin-top: 12vw;
-    }
-
-    .navbar-buttons button {
-        padding: 1.5vw 3.0vw; /* Adjust button padding for smaller screens */
-        font-size: 2.5vw; /* Adjust button font size for smaller screens */
-    }
-}
-@media screen and (min-width: 320px) and (max-width: 321px) {
-    #header {
-        max-width: 80vw; /* Adjust max width for smaller screens */
-        min-width: 320px;
-        height: 18vw;
-        min-height: 40px;
-    }
-    .beerLogo, .schoolLogo {
-        width: 20vw; /* Adjust logo size for smaller screens */
-        height: 18vw; /* Maintain aspect ratio */
-    }
-
-    .title {
-        font-size: 10vw; /* Adjust title font size for smaller screens */
-        margin-top: 9vw;
-    }
-
-    .navbar-buttons {
-        padding-top: 0.5vw;
-        margin-top: 12vw;
+        padding-top: 0.5vw; /* Adjust top padding for smaller screens */
+        margin-top: 12vw; /* Adjust top margin for smaller screens */
     }
 
     .navbar-buttons button {
