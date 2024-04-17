@@ -58,3 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
         
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const leftTriangle = document.querySelector('#page-nav .left-triangle');
+    const rightTriangle = document.querySelector('#page-nav .right-triangle');
+
+    leftTriangle.addEventListener('click', function() {
+        this.style.transform = 'translate(2px, 2px)'; // Move slightly downright on click
+        setTimeout(() => {
+            this.style.transform = 'translate(0, 0)'; // Reset the transform after a short delay
+        }, 300);
+    });
+
+    rightTriangle.addEventListener('click', function() {
+        this.style.transform = 'translate(-2px, 2px)'; // Move slightly downright on click
+        setTimeout(() => {
+            this.style.transform = 'translate(0, 0)'; // Reset the transform after a short delay
+        }, 300);
+    });
+});

@@ -69,7 +69,16 @@ body {
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for smooth movement and hover effect */
     position: relative;
+}
+
+.navbar-buttons button:hover{
+    filter: brightness(80%);
+}
+
+.navbar-buttons button:active {
+    transform: translate(2px, 2px); /* Move slightly down and right */
 }
 
 .navbar-buttons button:not(:last-child) {
