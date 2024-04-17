@@ -107,7 +107,6 @@ body {
     background-size: cover; /* Ensure the background image covers the entire div */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent background image from repeating */
-    background-image: url('../images/draft\ skertches\ 1.jpg');
 }
 
 .page-num{
@@ -196,7 +195,7 @@ body {
     align-items: center;
 }
 
-.page-nav {
+#page-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,14 +204,14 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
 }
-.page-nav .left-triangle {
+#page-nav .left-triangle {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 12px 20px 12px 0; /* Adjust size of the triangle */
     border-color: transparent #d28b00 transparent transparent; /* Adjust color */
 }
-.page-nav .right-triangle {
+#page-nav .right-triangle {
     width: 0;
     height: 0;
     border-style: solid;
