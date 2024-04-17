@@ -116,66 +116,6 @@ body {
     margin: 8px;
 }
 
-/* Media query for tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    #header {
-        max-width: 100vw; /* Adjust max width for tablets */
-        min-width: 768px;
-        height: 15vw; /* Adjust height for tablets */
-        min-height: 40px;
-    }
-
-    .beerLogo, .schoolLogo {
-        width: 17vw; /* Adjust logo size for tablets */
-        height: 15vw; /* Maintain aspect ratio */
-    }
-
-    .title {
-        font-size: 8vw; /* Adjust title font size for tablets */
-        margin-top: 1vw;
-    }
-
-    .navbar-buttons {
-        padding-top: 0.5vw;
-        margin-top: 10vw;
-    }
-
-    .navbar-buttons button {
-        padding: 1.0vw 1.6vw; /* Adjust button padding for tablets */
-        font-size: 2.3vw; /* Adjust button font size for tablets */
-    }
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 767px) {
-    #header {
-        max-width: 100vw; /* Adjust max width for smaller screens */
-        min-width: 325px;
-        height: 18vw; /* Adjust height for smaller screens */
-        min-height: 40px;
-    }
-
-    .beerLogo, .schoolLogo {
-        width: 20vw; /* Adjust logo size for smaller screens */
-        height: 18vw; /* Maintain aspect ratio */
-    }
-
-    .title {
-        font-size: 7vw; /* Adjust title font size for smaller screens */
-        margin-top: 4vw;
-    }
-
-    .navbar-buttons {
-        padding-top: 1vw;
-        margin-top: 11vw;
-    }
-
-    .navbar-buttons button {
-        padding: 1.2vw 1.4vw; /* Adjust button padding for smaller screens */
-        font-size: 2.0vw; /* Adjust button font size for smaller screens */
-    }
-}
-
 
 /* Singular Page */
 
@@ -187,9 +127,9 @@ body {
 }
 
 .singular-page-frame{
-    width: 520px;
-    height: 722px;
-    border: 15px solid #661122; /* Add a border around the page-frame */
+    width: 428px;
+    height: 586px;
+    border: 12px solid #661122; /* Add a border around the page-frame */
     box-sizing: border-box; /* Include border in the specified width and height */
     display: flex;
     justify-content: center;
@@ -211,6 +151,8 @@ body {
     border-style: solid;
     border-width: 12px 20px 12px 0; /* Adjust size of the triangle */
     border-color: transparent #d28b00 transparent transparent; /* Adjust color */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for smooth movement and hover effect */
+    cursor: pointer; /* Change cursor to pointer */
 }
 #page-nav .right-triangle {
     width: 0;
@@ -218,6 +160,12 @@ body {
     border-style: solid;
     border-width: 12px 0 12px 20px; /* Adjust size of the triangle */
     border-color: transparent transparent transparent #d28b00; /* Adjust color */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for smooth movement and hover effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#page-nav .left-triangle:hover, #page-nav .right-triangle:hover {
+    filter: brightness(80%); /* Darken the triangle on hover */
 }
 
 .page-num{
@@ -294,4 +242,74 @@ body {
     margin-top: 16px; /* Adjust margin as needed */
     font-family: 'Inter', sans-serif;
     font-size: 24px;
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        max-width: 100vw; /* Adjust max width for tablets */
+        min-width: 768px;
+        height: 15vw; /* Adjust height for tablets */
+        min-height: 40px;
+    }
+
+    .beerLogo, .schoolLogo {
+        width: 17vw; /* Adjust logo size for tablets */
+        height: 15vw; /* Maintain aspect ratio */
+    }
+
+    .title {
+        font-size: 8vw; /* Adjust title font size for tablets */
+        margin-top: 1vw;
+    }
+
+    .navbar-buttons {
+        padding-top: 0.5vw;
+        margin-top: 10vw;
+    }
+
+    .navbar-buttons button {
+        padding: 1.0vw 1.6vw; /* Adjust button padding for tablets */
+        font-size: 2.3vw; /* Adjust button font size for tablets */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    #header {
+        max-width: 100vw; /* Adjust max width for smaller screens */
+        min-width: 325px;
+        height: 18vw; /* Adjust height for smaller screens */
+        min-height: 40px;
+    }
+
+    .beerLogo, .schoolLogo {
+        width: 20vw; /* Adjust logo size for smaller screens */
+        height: 18vw; /* Maintain aspect ratio */
+    }
+
+    .title {
+        font-size: 7vw; /* Adjust title font size for smaller screens */
+        margin-top: 4vw;
+    }
+
+    .navbar-buttons {
+        padding-top: 1vw;
+        margin-top: 11vw;
+    }
+
+    .navbar-buttons button {
+        padding: 1.2vw 1.4vw; /* Adjust button padding for smaller screens */
+        font-size: 2.0vw; /* Adjust button font size for smaller screens */
+    }
+
+    .singular-page-frame{
+        width: 327px;
+        height: 448px;
+        border: 15px solid #661122; /* Add a border around the page-frame */
+        box-sizing: border-box; /* Include border in the specified width and height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
